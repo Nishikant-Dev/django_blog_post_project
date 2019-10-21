@@ -117,6 +117,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# MEDIA ROOT is where the uploaded files will be saved--which will be at projects root directory
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA URL is a public url, for accessing through an browser
+MEDIA_URL = '/media/'
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
+
